@@ -17,6 +17,7 @@ namespace SampleWebApp.Controllers
         [HttpGet("list-employees")]
         public IActionResult GetEmployees()
         {
+            Console.WriteLine("hello world");
             var employees = _context.Employees.Include(e => e.Department).ToList();
             return Ok(employees);
         }
