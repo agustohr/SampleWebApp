@@ -21,5 +21,18 @@ namespace SampleWebApp.Controllers
             var employees = _context.Employees.Include(e => e.Department).ToList();
             return Ok(employees);
         }
+
+        public void MyFirstMethod()
+        {
+            //do something
+        }
+        public void MySecondMethod()
+        {
+            //do something
+        }
+        public void MyThirdMethod()
+        {
+            //do something
+        }
     }
 }
